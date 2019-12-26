@@ -6,6 +6,20 @@
 
 @section('content')
     <div class="wrapper wrapper-content animated fadeInRight">
+        {{--                alert===================================================--}}
+        @if(session('sukses'))<div class="alert alert-success alert-dismissible col-lg-8" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <i class="fa fa-check-circle"></i>
+            {{session('sukses')}}
+        </div>
+        @elseif(session('delete'))
+            <div class="alert alert-danger alert-dismissible col-lg-8" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <i class="fa fa-times-circle"></i>
+                {{session('delete')}}
+            </div>
+        @endif
+
         <div class="row">
             <div class="col-lg-8">
                 <div class="ibox ">
@@ -38,7 +52,7 @@
                                 <td>{{$siswa->agama}}</td>
                                 <td>
                                     <button class="btn btn-info btn-xs" type="button"><i class="fa fa-paste"></i> Edit</button>
-                                    <button class="btn btn-danger btn-xs" type="button"><i class="fa fa-warning"></i> Delete</button>
+                                    <a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-xs" onclick="return confirm('Yakin mau dihapus?')"><i class="fa fa-warning"></i>Delete</a>
                                 </td>
                             </tr>
                             @endforeach
