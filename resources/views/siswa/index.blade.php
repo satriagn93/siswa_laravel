@@ -22,7 +22,6 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Npm</th>
                                 <th>Nama</th>
                                 <th>Jenis Kelamin</th>
@@ -31,17 +30,18 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($data_siswa as $siswa)
                             <tr>
-                                <td>1</td>
-                                <td>1111050046</td>
-                                <td>Satria Girinanda</td>
-                                <td>Laki-Laki</td>
-                                <td>Islam</td>
+                                <td>{{$siswa->npm}}</td>
+                                <td>{{$siswa->nama}}</td>
+                                <td>{{$siswa->jenis_kelamin}}</td>
+                                <td>{{$siswa->agama}}</td>
                                 <td>
                                     <button class="btn btn-info btn-xs" type="button"><i class="fa fa-paste"></i> Edit</button>
                                     <button class="btn btn-danger btn-xs" type="button"><i class="fa fa-warning"></i> Delete</button>
                                 </td>
                             </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -19,23 +19,24 @@
                     </div>
                     <div class="ibox-content">
                         <form action="/siswa/post" method="POST">
+                            {{ csrf_field() }}
                             <div class="form-group  row"><label class="col-sm-2 col-form-label">NPM</label>
-                                <div class="col-sm-4"><input type="text" class="form-control"></div>
+                                <div class="col-sm-4"><input name="npm" type="text" class="form-control"></div>
                             </div>
                             <div class="form-group  row"><label class="col-sm-2 col-form-label">Nama</label>
-                                <div class="col-sm-4"><input type="text" class="form-control"></div>
+                                <div class="col-sm-4"><input name="nama" type="text" class="form-control"></div>
                             </div>
                             <div class="form-group row"><label class="col-sm-2 col-form-label">Jenis Kelamin</label>
 
-                                <div class="col-sm-4"><select class="form-control m-b" name="account">
-                                        <option>==pilih==</option>
-                                        <option>Pria</option>
-                                        <option>Wanita</option>
+                                <div class="col-sm-4"><select name="jenis_kelamin" class="form-control m-b">
+                                        <option value="0">==pilih==</option>
+                                        <option value="Pria">Pria</option>
+                                        <option value="Wanita">Wanita</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group  row"><label class="col-sm-2 col-form-label">Agama</label>
-                                <div class="col-sm-4"><input type="text" class="form-control"></div>
+                                <div class="col-sm-4"><input name="agama" type="text" class="form-control"></div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group row">

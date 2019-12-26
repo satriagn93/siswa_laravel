@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e0c604-0109-4f89-bdf3-0ba44da9f73c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/siswa/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiswaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiswaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/siswa/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/siswa/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/siswa/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/siswa/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -124,7 +122,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bk_laravel_crud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-crud" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -159,19 +157,40 @@
       <workItem from="1577096424260" duration="2298000" />
       <workItem from="1577099134808" duration="1060000" />
       <workItem from="1577156926839" duration="5036000" />
-      <workItem from="1577323980241" duration="8047000" />
+      <workItem from="1577323980241" duration="9709000" />
+      <workItem from="1577340024571" duration="1302000" />
     </task>
+    <task id="LOCAL-00001" summary="form create siswa">
+      <created>1577332933724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577332933724</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="form create siswa" />
+    <option name="LAST_COMMIT_MESSAGE" value="form create siswa" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2223" y="264" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577325361240">
-      <screen x="1600" y="0" width="1680" height="1050" />
+    <state x="740" y="35" width="860" height="814" key="CommitChangelistDialog2" timestamp="1577332933001">
+      <screen x="0" y="27" width="1600" height="823" />
+    </state>
+    <state x="740" y="35" width="860" height="814" key="CommitChangelistDialog2/0.27.1600.823/1600.0.1680.1050@1600.0.1680.1050" timestamp="1577332933001" />
+    <state x="828" y="223" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577335815165">
+      <screen x="0" y="27" width="1600" height="823" />
     </state>
     <state x="593" y="234" key="FileChooserDialogImpl/0.27.1600.823/1600.0.1680.1050@0.27.1600.823" timestamp="1577325203495" />
-    <state x="2223" y="264" width="424" height="491" key="FileChooserDialogImpl/0.27.1600.823/1600.0.1680.1050@1600.0.1680.1050" timestamp="1577325361240" />
+    <state x="828" y="223" width="424" height="491" key="FileChooserDialogImpl/0.27.1600.823/1600.0.1680.1050@1600.0.1680.1050" timestamp="1577335815165" />
     <state x="593" y="234" key="FileChooserDialogImpl/0.27.1600.823@0.27.1600.823" timestamp="1577157215916" />
+    <state x="800" y="174" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1577332939704">
+      <screen x="0" y="27" width="1600" height="823" />
+    </state>
+    <state x="800" y="174" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.823/1600.0.1680.1050@1600.0.1680.1050" timestamp="1577332939704" />
   </component>
 </project>

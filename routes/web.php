@@ -14,5 +14,6 @@
 Route::get('/', 'HomeController@index')->name("main");
 Route::get('/siswa','SiswaController@index');
 Route::get('/siswa/create','SiswaController@create');
+Route::post('/siswa/post','SiswaController@post');
 
 //Route::get('/siswa', 'SiswaController@index')->name("minor");
