@@ -11,4 +11,9 @@ class SiswaController extends Controller
     {
         return view('siswa.index');
     }
+
+    public function create(Request $request)
+    {
+        return view('siswa.create');
+    }
 }

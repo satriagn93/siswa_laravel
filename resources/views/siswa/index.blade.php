@@ -10,7 +10,7 @@
             <div class="col-lg-8">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <button type="button" class="btn btn-default btn-xs">Create</button>
+                        <a href="/siswa/create" class="btn btn-default btn-xs">Create</a>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
