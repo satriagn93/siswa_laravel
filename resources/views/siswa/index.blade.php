@@ -12,6 +12,12 @@
             <i class="fa fa-check-circle"></i>
             {{session('sukses')}}
         </div>
+        @elseif(session('update'))
+            <div class="alert alert-info alert-dismissible col-lg-8" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <i class="fa fa-info-circle"></i>
+                {{session('update')}}
+            </div>
         @elseif(session('delete'))
             <div class="alert alert-danger alert-dismissible col-lg-8" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -46,12 +52,12 @@
                             <tbody>
                             @foreach($data_siswa as $siswa)
                             <tr>
-                                <td>{{$siswa->npm}}</td>
-                                <td>{{$siswa->nama}}</td>
+                                <td><a href="/siswa/{{$siswa->id}}/show">{{$siswa->npm}}</a></td>
+                                <td><a href="/siswa/{{$siswa->id}}/show">{{$siswa->nama}}</a></td>
                                 <td>{{$siswa->jenis_kelamin}}</td>
                                 <td>{{$siswa->agama}}</td>
                                 <td>
-                                    <button class="btn btn-info btn-xs" type="button"><i class="fa fa-paste"></i> Edit</button>
+                                    <a href="/siswa/{{$siswa->id}}/edit" class="btn btn-info btn-xs"><i class="fa fa-paste"></i>Edit</a>
                                     <a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-xs" onclick="return confirm('Yakin mau dihapus?')"><i class="fa fa-warning"></i>Delete</a>
                                 </td>
                             </tr>
